@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\img\about-visual.jpg" />
+    <None Include="wwwroot\assets\img\app-design-visual.png" />
+    <None Include="wwwroot\assets\img\blog-post-1.jpg" />
+    <None Include="wwwroot\assets\img\blog-post-2.jpg" />
+    <None Include="wwwroot\assets\img\blog-post-3.jpg" />
+    <None Include="wwwroot\assets\img\contact-visual.png" />
+    <None Include="wwwroot\assets\img\web-design-visual.png" />
+    <None Include="wwwroot\assets\img\work-eostre.jpg" />
+    <None Include="wwwroot\assets\img\work-go-outside.jpg" />
+    <None Include="wwwroot\assets\img\work-strategik.jpg" />
+  </ItemGroup>
+
+</Project>
