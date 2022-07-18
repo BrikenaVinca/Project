@@ -5,16 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\assets\img\app-design-visual.png" />
+    <Content Remove="wwwroot\assets\img\blog-post-1.jpg" />
+    <Content Remove="wwwroot\assets\img\blog-post-2.jpg" />
+    <Content Remove="wwwroot\assets\img\blog-post-3.jpg" />
+    <Content Remove="wwwroot\assets\img\contact-visual.png" />
+    <Content Remove="wwwroot\assets\img\html .jpg" />
+    <Content Remove="wwwroot\assets\img\pizza.jpg" />
+    <Content Remove="wwwroot\assets\img\pizzaa.jpg" />
+    <Content Remove="wwwroot\assets\img\web-design-visual.png" />
+    <Content Remove="wwwroot\assets\img\work-eostre.jpg" />
+    <Content Remove="wwwroot\assets\img\work-go-outside.jpg" />
+    <Content Remove="wwwroot\assets\img\work-strategik.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\assets\img\about-visual.jpg" />
-    <None Include="wwwroot\assets\img\app-design-visual.png" />
-    <None Include="wwwroot\assets\img\blog-post-1.jpg" />
-    <None Include="wwwroot\assets\img\blog-post-2.jpg" />
-    <None Include="wwwroot\assets\img\blog-post-3.jpg" />
-    <None Include="wwwroot\assets\img\contact-visual.png" />
-    <None Include="wwwroot\assets\img\web-design-visual.png" />
-    <None Include="wwwroot\assets\img\work-eostre.jpg" />
-    <None Include="wwwroot\assets\img\work-go-outside.jpg" />
-    <None Include="wwwroot\assets\img\work-strategik.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
 </Project>

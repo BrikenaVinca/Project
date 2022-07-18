@@ -1,4 +1,5 @@
-﻿using BrikenaVinca.Models;
+﻿using BrikenaVinca.Data;
+using BrikenaVinca.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,15 +12,21 @@ namespace BrikenaVinca.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<HomeController> _logger;
+        private readonly DataContext _context;
+
+        public HomeController(ILogger<HomeController> logger, DataContext context)
         {
+            _context = context;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
+            ViewBag.Skills = _context.Skills.ToList();
+            ViewBag.Projects = _context.Project.ToList();
+
             return View();
         }
 
